@@ -21,7 +21,7 @@
         {
             "type": "http",
             "endpoint_name": "Static Website",
-            "endpoint_url": "http://viv-staging.accumedintel.net",
+            "endpoint_url": "http://www.accumedintel.com",
             "up_status": 301
         }
     ],
