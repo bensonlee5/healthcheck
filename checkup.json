@@ -2,8 +2,8 @@
 	"checkers": [
         {
         	"type": "http",
-        	"endpoint_name": "Static Website",
-        	"endpoint_url": "http://www.accumedintel.com",
+        	"endpoint_name": "Access Website",
+        	"endpoint_url": "http://access.accumedintel.com",
             "up_status": 301
         },
         {
@@ -13,18 +13,19 @@
             "up_status": 307
         },
         {
-                "type": "http",
-                "endpoint_name": "VIV-staging Website",
-                "endpoint_url": "http://viv-staging.accumedintel.net",
+            "type": "http",
+            "endpoint_name": "VIV-Staging Website",
+            "endpoint_url": "http://viv-staging.accumedintel.net",
             "up_status": 307
         },
-
         {
-        	"type": "http",
-        	"endpoint_name": "Access Website",
-        	"endpoint_url": "http://access.accumedintel.com",
+            "type": "http",
+            "endpoint_name": "Static Website",
+            "endpoint_url": "http://viv-staging.accumedintel.net",
             "up_status": 301
-        }
+        },
+
+
     ],
 
     "storage": {
