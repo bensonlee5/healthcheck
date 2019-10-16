@@ -1,0 +1,35 @@
+{
+	"checkers": [
+        {
+        	"type": "http",
+        	"endpoint_name": "Static Website",
+        	"endpoint_url": "http://www.accumedintel.com",
+            "up_status": 301
+        },
+        {
+        	"type": "http",
+        	"endpoint_name": "VIV Website",
+        	"endpoint_url": "http://viv.accumedintel.net",
+            "up_status": 307
+        },
+        {
+                "type": "http",
+                "endpoint_name": "VIV-staging Website",
+                "endpoint_url": "http://viv-staging.accumedintel.net",
+            "up_status": 307
+        },
+
+        {
+        	"type": "http",
+        	"endpoint_name": "Access Website",
+        	"endpoint_url": "http://access.accumedintel.com",
+            "up_status": 301
+        }
+    ],
+
+    "storage": {
+    "provider": "fs",
+    "dir": "statuspage/check_files",
+    "url": "http://healthcheck.accumedintel.net/check_files"
+    }
+}
