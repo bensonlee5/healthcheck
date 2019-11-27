@@ -57,7 +57,7 @@ $mysqli->close();
     </head>
     <body>
         <div class="container">
-            <h3 class="mt-5">
+            <h3 class="mt-3">
               Async Queue
               <small class="text-muted">(last 30 tasks, updates automatically every 10 sec)</small>
             </h3>
