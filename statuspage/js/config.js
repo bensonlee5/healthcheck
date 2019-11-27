@@ -5,7 +5,7 @@ checkup.config = {
 	"timeframe": 1 * time.Day,
 
 	// How often, in seconds, to pull new checks and update the page.
-	"refresh_interval": 60,
+	"refresh_interval": 10,
 
 	// Configure read-only access to stored checks. This configuration
 	// depends on your storage provider. Any credentials and other values
@@ -17,8 +17,8 @@ checkup.config = {
 
 	// The text to display along the top bar depending on overall status.
 	"status_text": {
-		"healthy": "AccuMed Healthcheck - Situation Normal",
-		"degraded": "AccuMed Healthcheck - Degraded Service",
-		"down": "AccuMed Healthcheck - Service Disruption"
+		"healthy": "Services are operating normally",
+		"degraded": "Some services are degraded",
+		"down": "Some services are not operating"
 	}
 };
