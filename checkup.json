@@ -2,31 +2,31 @@
 	"checkers": [
         {
         	"type": "http",
-        	"endpoint_name": "Access Website",
+        	"endpoint_name": "access.accumedintel.com",
         	"endpoint_url": "http://access.accumedintel.com",
             "up_status": 301
         },
         {
         	"type": "http",
-        	"endpoint_name": "VIV Website",
+        	"endpoint_name": "viv.accumedintel.net",
         	"endpoint_url": "http://viv.accumedintel.net",
             "up_status": 307
         },
         {
             "type": "http",
-            "endpoint_name": "VIV-Staging Website",
+            "endpoint_name": "viv-staging.accumedintel.net",
             "endpoint_url": "http://viv-staging.accumedintel.net",
             "up_status": 307
         },
         {
             "type": "http",
-            "endpoint_name": "Static Website",
+            "endpoint_name": "www.accumedintel.com",
             "endpoint_url": "http://www.accumedintel.com",
             "up_status": 301
         },
         {
             "type": "http",
-            "endpoint_name": "OpenAPI",
+            "endpoint_name": "openapi.accumedintel.com",
             "endpoint_url": "http://openapi.accumedintel.com/healthcheck",
             "up_status": 200
         }
