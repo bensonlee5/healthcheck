@@ -380,5 +380,5 @@ footer {
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 #lastcheck-info {
-	display: hidden;
+	display: none;
 }
