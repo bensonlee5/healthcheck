@@ -17,7 +17,9 @@ checkup.config = {
 
 	// The text to display along the top bar depending on overall status.
 	"status_text": {
-		"healthy": "Services are operating normally",
+		"healthy": "Services are operating normally <div class='spinner-grow text-success' role='status'>
+  <span class='sr-only'>Loading...</span>
+</div>",
 		"degraded": "Some services are degraded",
 		"down": "Some services are not operating"
 	}
