@@ -5,6 +5,7 @@
     while ($count < 14) {
         $datePath = $path . $date->format('Y/m/d');
         clearstatcache();
+        $backup[$count]['dropbox'] = 'https://dropbox.com/home/AccuMed%20Team%20Folder/Databases/Backups/Live/' . $date->format('Y/m/d');
         $backup[$count]['result'] = file_exists($datePath);
         $backup[$count]['date'] = $date->format('m/d/Y');
         $count++;
@@ -27,7 +28,8 @@
               <thead class="thead-dark">
                 <tr>
                   <th scope="col">Date</th>
-                  <th scope="col">Status</th>
+                  <th scope="col" style="width: 20%" class="text-center">Status</th>
+                  <th scope="col" style="width: 25%" class="text-right">Dropbox Link</th>
                 </tr>
               </thead>
               <tbody>
@@ -36,7 +38,8 @@
                 ?>
                     <tr>
                       <th scope="row"><?= $row['date'] ?></th>
-                      <td class="<?= $row['result'] ? 'bg-success' : 'bg-danger' ?>"><?= $row['result'] ? 'OK' : 'Fail' ?></td>
+                      <td class="text-center <?= $row['result'] ? 'bg-success' : 'bg-danger' ?>"><?= $row['result'] ? 'OK' : 'Fail' ?></td>
+                      <td class="text-right"><?= $row['result'] ? '<a target="_blank" href="' . $row['dropbox'] . '">[Dropbox link]</a>' : '' ?></td>
                     </tr>
                 <?php } ?>
               </tbody>
