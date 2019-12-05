@@ -52,16 +52,15 @@ $mysqli->close();
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-        <meta http-equiv="refresh" content="10">
+        <meta http-equiv="refresh" content="1">
         <title>AccuMed SQS Monitor</title>
     </head>
     <body>
         <div class="container">
             <h3 class="mt-3">
               Async Queue
-              <small class="text-muted">(last 30 tasks, updates automatically every 10 sec)</small>
+              <small class="text-muted">(last 30 tasks, updates in real-time)</small>
             </h3>
-            <a href=".">[refresh now]</a>
             <table class="table table-borderless mt-4">
                 <tr>
                 <td class="bg-info">In queue: <?= $in_queue ?></td>
