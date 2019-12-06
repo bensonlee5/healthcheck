@@ -150,6 +150,14 @@ function allCheckFilesLoaded(numChecksLoaded, numResultsLoaded) {
 		}
 		if (result.message) {
 			// New event because message posted
+
+            if (result.down) {
+                $.ajax({
+                 type: "GET",
+                 url: "mail.php?endpoint=" + result.title
+                });                
+            }
+
 			newEvents.push({
 				id: checkup.eventCounter++,
 				result: result,
