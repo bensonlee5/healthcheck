@@ -393,5 +393,6 @@ footer {
 }
 
 marquee {
+    margin-left: 100px;
     width: 70vw;
 }
