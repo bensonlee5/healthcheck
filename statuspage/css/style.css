@@ -53,7 +53,7 @@ main {
 #overall-status.gray   { background-color: #B8B8B8; }
 
 #overall-status-text {
-	font: bold 32px 'Source Sans Pro', sans-serif;
+	font: bold 40px 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 1em;
