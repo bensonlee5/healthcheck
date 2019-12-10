@@ -55,7 +55,6 @@ main {
 #overall-status-text {
 	font: bold 40px 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
-	text-align: center;
 	line-height: 1em;
 }
 
