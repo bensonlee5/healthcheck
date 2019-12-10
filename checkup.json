@@ -29,6 +29,18 @@
             "endpoint_name": "openapi.accumedintel.com",
             "endpoint_url": "http://openapi.accumedintel.com/healthcheck",
             "up_status": 200
+        },
+        {
+            "type": "http",
+            "endpoint_name": "api.accumedintel.net",
+            "endpoint_url": "http://api.accumedintel.net",
+            "up_status": 200
+        },
+        {
+            "type": "http",
+            "endpoint_name": "api.accumedexpress.net",
+            "endpoint_url": "http://api.accumedexpress.net",
+            "up_status": 500
         }
     ],
 
