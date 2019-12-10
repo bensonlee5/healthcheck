@@ -9,7 +9,7 @@ while(1) {
     foreach ($data as $endpoint) {
         if (!in_array($endpoint->title, $status) && isset($endpoint->down)) {
             //send mail
-            shell_exec('echo -e "Subject: Healthcheck Alert!\n\nHealthcheck Alert:\n' .
+            shell_exec('echo -c "Subject: Healthcheck Alert!\n\nHealthcheck Alert:\n' .
             $endpoint->title . ' is down." | ssmtp d.foster@accumedintel.com');
             $new_status[] = $endpoint->title;
         }
