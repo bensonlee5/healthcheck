@@ -40,7 +40,7 @@
             "type": "http",
             "endpoint_name": "api.accumedexpress.net",
             "endpoint_url": "http://api.accumedexpress.net",
-            "up_status": 500
+            "up_status": 200
         }
     ],
 
