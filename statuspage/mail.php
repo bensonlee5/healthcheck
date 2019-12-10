@@ -11,6 +11,8 @@ while(1) {
             //send mail
             shell_exec('echo -c "Subject: Healthcheck Alert!\n\nHealthcheck Alert:\n' .
             $endpoint->title . ' is down." | ssmtp d.foster@accumedintel.com');
+        }
+        if (isset($endpoint->down)) {
             $new_status[] = $endpoint->title;
         }
     }
