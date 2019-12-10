@@ -4,7 +4,7 @@ while(1) {
     $new_status = [];
     $files = scandir('/var/www/healthcheck.accumedintel.net/statuspage/check_files', SCANDIR_SORT_DESCENDING);
     foreach ($files as $i => $file) {
-        if ($i > 70) {
+        if ($i > 70 && is_file('/var/www/healthcheck.accumedintel.net/statuspage/check_files/' . $file)) {
             unlink('/var/www/healthcheck.accumedintel.net/statuspage/check_files/' . $file);
         }
     }
