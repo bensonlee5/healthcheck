@@ -7,7 +7,6 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 }
-
 header {
 	margin-bottom: 20px;
 	box-shadow: 0 2px 100px rgba(0, 0, 0, .15);
@@ -39,7 +38,18 @@ main {
 
 #overall-status.green  { background-color: #40D24C; }
 #overall-status.yellow { background-color: #D2C640; }
-#overall-status.red    { background-color: #D24040; }
+#overall-status.red    {
+     animation: blinkingBackground 2s infinite;
+}
+
+@keyframes blinkingBackground{
+    0%		{ background-color: #D24040;}
+    25%		{ background-color: #000000;}
+    50%		{ background-color: #D24040;}
+    75%		{ background-color: #000000;}
+    100%	{ background-color: #D24040;}
+}
+
 #overall-status.gray   { background-color: #B8B8B8; }
 
 #overall-status-text {
