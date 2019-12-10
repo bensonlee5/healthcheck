@@ -1,6 +1,6 @@
 <?php
 $new_status = [];
-$files = scandir('/var/www/healthcheck.accumedintel.net/statuspage', SCANDIR_SORT_DESCENDING);
+$files = scandir('/var/www/healthcheck.accumedintel.net/statuspage/check_files', SCANDIR_SORT_DESCENDING);
 $newest_file = $files[0];
 $data = json_decode(file_get_contents($newest_file));
 $status = json_decode(file_get_contents('/var/www/healthcheck.accumedintel.net/statuspage/status.json'));
