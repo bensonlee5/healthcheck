@@ -41,6 +41,12 @@
             "endpoint_name": "api.accumedexpress.net",
             "endpoint_url": "http://api.accumedexpress.net",
             "up_status": 200
+        },
+        {
+            "type": "http",
+            "endpoint_name": "VIV Analytics",
+            "endpoint_url": "http://webhooks-intranet.accumedintel.net/viv-analytics.php",
+            "up_status": 200
         }
     ],
 
