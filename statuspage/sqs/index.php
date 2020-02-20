@@ -8,7 +8,7 @@ if (mysqli_connect_errno()) {
 }
 
 $query = 'SELECT request_id, status, b.name, action, created_on, updated_on FROM message
-    JOIN intranet_live.employees b ON employee_id = b.employeeID
+    LEFT JOIN intranet_live.employees b ON employee_id = b.employeeID
     ORDER BY updated_on DESC LIMIT 30';
 $result = $mysqli->query($query);
 
@@ -101,7 +101,7 @@ $mysqli->close();
                   ?>
                 <tr>
                   <th scope="row"><a target="_blank" href="https://viv.accumedintel.net/request/<?= $row['request_id'] ?>"><?= $row['request_id'] ?></a></th>
-                  <td><?= $row['name'] ?></td>
+                  <td><?php echo is_null($row['name']) ? 'System' : $row['name']; ?></td>
                   <td><?= $row['action'] ?></td>
                   <td><?= $row['created_on'] ?></td>
                   <td><?= $row['updated_on'] ?></td>
